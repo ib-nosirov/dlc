@@ -8,6 +8,9 @@ It version-matches with the current version of DeepLabCut installed on TACC reso
 --------------------------
 Install DLC on Mac (Intel)
 --------------------------
+Prerequisite software: ``pip``
+  https://pip.pypa.io/en/stable/installation/
+
 ``/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)``
   Install the Homebrew package manager.
 
