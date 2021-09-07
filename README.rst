@@ -47,7 +47,7 @@ The files contain basic files for creating a DLC project and runnings `sbatch` s
 One very important command for transporting a created project to and from a TACC resource is the `rsync` command.
   Move to the directory immediately above your DLC project directory.
   Now pass the command
-  `rsync -avz [project name] [username]@maverick2.tacc.utexas.edu:/work2/[your allocation number]/[username]/maverick2/[project name]`.
+  ``rsync -avz [project name] [username]@maverick2.tacc.utexas.edu:/work2/[your allocation number]/[username]/maverick2/[project name]``.
   (Tip: everything after the ':' is found by passing the `pwd` command while you are in your TACC workspace.)
 
 More information can be found about TACC resources, and Maverick2 specifically, in the Maverick2 User Guide.
