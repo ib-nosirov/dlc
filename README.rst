@@ -33,3 +33,20 @@ Install DLC on Mac (Intel)
 
 ``pip install -e .``
   Install DeepLabCut v2.1.10.
+
+-----
+Usage
+-----
+
+DeepLabCut documentation is the perfect place to start learning how to use DLC.
+  https://deeplabcut.github.io/DeepLabCut/docs/standardDeepLabCut_UserGuide.html
+
+I have also included some helpful template files in the `Templates` folder.
+The files contain basic files for creating a DLC project and runnings `sbatch` scripts on a TACC resource. You can even try running `python create_project.py` from inside a virtual environment to test how a DLC project is made, though make sure the file path dates in the python file are set to your current date.
+
+One very important command for transporting a created project to and from a TACC resource is the `rsync` command.
+  Move to the directory immediately above your DLC project directory.
+  Now pass the command `rsync -avz [project name] [username]@maverick2.tacc.utexas.edu:/work2/[your allocation number]/[username]/maverick2/[project name]`. (Tip: everything after the ':' is found by passing the `pwd` command while you are in your TACC workspace.)
+
+More information can be found about TACC resources, and Maverick2 specifically, in the Maverick2 User Guide.
+  https://portal.tacc.utexas.edu/user-guides/maverick2
